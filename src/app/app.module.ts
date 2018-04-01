@@ -3,8 +3,13 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'about-us', component: AboutUsComponent }
+]
 
 
 @NgModule({
@@ -14,6 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     NavbarComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes, {enableTracing: true}
+    ),
     BrowserModule,
     NgbModule.forRoot()
   ],
