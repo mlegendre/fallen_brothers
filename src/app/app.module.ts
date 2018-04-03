@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent }
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, {enableTracing: true}
     ),
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
