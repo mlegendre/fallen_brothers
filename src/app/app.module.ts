@@ -11,7 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './/app-routing.module';
 
 const appRoutes: Routes = [
-  { path: 'about-us', component: AboutUsComponent }
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'home', component: HomeComponent }
 ]
 
 
