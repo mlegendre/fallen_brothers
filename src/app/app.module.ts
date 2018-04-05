@@ -9,10 +9,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { SponsorsComponent } from './components/sponsors/sponsors.component';
 
 const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'home', component: HomeComponent }
+  { path: 'sponsors', component: SponsorsComponent },
+  { path: '', component: HomeComponent }
 ]
 
 
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     AboutUsComponent,
     NavbarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SponsorsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}
