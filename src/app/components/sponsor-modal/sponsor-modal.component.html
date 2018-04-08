@@ -1,0 +1,104 @@
+<button type="button"  class="btn btn-primary" (click)="open(content)">Donate Today!
+  <span class="glyphicon glyphicon-gift"></span>
+</button>
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Become a sponsor today!</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <!-- <img src="../../../assets/2015-FB-Sponsor-Levels-2-11.png" height="640px;" width="480px;" alt="sponsor level" /> -->
+    <h2>Sponsorship Levels</h2>
+    <ngb-tabset>
+      <ngb-tab title="Premium">
+          <ng-template ngbTabContent>
+            <h5>With a $1500 donation you get:</h5>
+            <ul>
+              <li>
+                Your name or your company's name and logo promintently displayed at one of the 18 tee boxes along the course.
+              </li>
+              <li>Company recognition at the dinner banquet.</li>
+              <li>1000 golf tees with company logo.</li>
+              <li>Company name and logo in each of the golf carts.</li>
+              <li>One foursome in the tournament (Friday or Saturday tee time available).</li>
+              <li>Website placement with logo and website link for 1 year on the Fallen Brothers website</li>
+            </ul>
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Plus">
+            <ng-template ngbTabContent>
+              <h5>With a $1000 donation you get:</h5>
+              <ul>
+                <li>
+                    Your name or your company's name and logo promintently displayed at one of the 18 tee boxes along the course.
+                </li>
+                <li>Company recognition at the dinner banquet.</li>
+                <li>1000 golf tees with company logo.</li>
+                <li>Company name and logo in each of the golf carts.</li>
+                <li>One foursome in the tournament (Friday or Saturday tee time available).</li>
+                <li>Website placement with logo and website link for 1 year on the Fallen Brothers website</li>
+              </ul>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="Corporate">
+              <ng-template ngbTabContent>
+                <h5>With a $750 donation you get:</h5>
+                <ul>
+                  <li>
+                      Your name or your company's name and logo promintently displayed at one of the 18 tee boxes along the course.
+                  </li>
+                  <li>Company recognition at the dinner banquet.</li>
+                  <li>Company name and logo in each of the golf carts.</li>
+                  <li>One foursome in the tournament (Friday or Saturday tee time available).</li>
+                  <li>Website placement with logo and website link for 1 year on the Fallen Brothers website</li>
+                </ul>
+              </ng-template>
+            </ngb-tab>
+            <ngb-tab title="Chip Contest Sponsor">
+                <ng-template ngbTabContent>
+                  <h5>With a $500 donation you get:</h5>
+                  <ul>
+                    <li>
+                        Your name or your company's name and logo promintently displayed at one of the 18 tee boxes along the course.
+                    </li>
+                    <li>Company recognition at the dinner banquet.</li>
+                    <li>Company name and logo in each of the golf carts.</li>
+                  </ul>
+                </ng-template>
+              </ngb-tab>
+              <ngb-tab title="Putt Contest Sponsor">
+                  <ng-template ngbTabContent>
+                    <h5>With a $500 donation you get:</h5>
+                    <ul>
+                      <li>
+                          Your name or your company's name and logo promintently displayed at one of the 18 tee boxes along the course.
+                      </li>
+                      <li>Company recognition at the dinner banquet.</li>
+                      <li>Company name and logo in each of the golf carts.</li>
+                    </ul>
+                  </ng-template>
+                </ngb-tab>
+      </ngb-tabset>
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown>
+            <button class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>Select Sponsorship</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item">Premium</button>
+              <button class="dropdown-item">Plus</button>
+              <button class="dropdown-item">Corporate</button>
+              <button class="dropdown-item">Chip Contest Sponsor</button>
+              <button class="dropdown-item">Putt Contest Sponsor</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary">Save</button>
+    <button type="button" class="btn btn-default" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
