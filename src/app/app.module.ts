@@ -17,6 +17,8 @@ import { ChalkRunComponent } from './components/chalk-run/chalk-run.component';
 const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'sponsors', component: SponsorsComponent },
+  { path: 'golf-tournament', component: GolfTournamentComponent },
+  { path: 'chalk-run', component: ChalkRunComponent },
   { path: '', component: HomeComponent }
 ]
 

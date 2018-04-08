@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./golf-tournament.component.css']
 })
 export class GolfTournamentComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
 
+  public getYear():number{
+    var date = new Date();
+    return date.getFullYear();
+  }
 }
