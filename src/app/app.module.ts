@@ -36,8 +36,7 @@ const appRoutes: Routes = [
     ChalkRunComponent
   ],
   imports: [
-    RouterModule.forRoot(appRoutes, {enableTracing: true}
-    ),
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     NgbModule.forRoot(),
     AppRoutingModule
