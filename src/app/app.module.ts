@@ -11,6 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { SponsorModalComponent } from './components/sponsor-modal/sponsor-modal.component';
+import { GolfTournamentComponent } from './components/golf-tournament/golf-tournament.component';
+import { ChalkRunComponent } from './components/chalk-run/chalk-run.component';
 
 const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
@@ -27,7 +29,9 @@ const appRoutes: Routes = [
     HomeComponent,
     FooterComponent,
     SponsorsComponent,
-    SponsorModalComponent
+    SponsorModalComponent,
+    GolfTournamentComponent,
+    ChalkRunComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}
