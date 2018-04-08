@@ -1,5 +1,4 @@
-import { Component, OnInit, Input, HostListener } from '@angular/core';
-import { SponsorModalComponent } from '../sponsor-modal/sponsor-modal.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,14 +8,9 @@ import { SponsorModalComponent } from '../sponsor-modal/sponsor-modal.component'
 export class NavbarComponent implements OnInit {
   isCollapsed: boolean;
   constructor() { 
-    this.isCollapsed = false;
+    this.isCollapsed = true;
   }
 
-  @Input() sponsorModal: SponsorModalComponent;
-  @HostListener('click')
-  click(context){
-    this.sponsorModal.open(context);
-  }
   ngOnInit() {
   }
 
